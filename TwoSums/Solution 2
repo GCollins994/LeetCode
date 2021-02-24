@@ -1,0 +1,16 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+
+//Using Hash Map implementation
+var twoSum = function(nums, target) {
+    let map = {};
+    
+    for(let [index, num] of nums.entries()) {
+        if(map[num] !== undefined) return [map[num], index];
+         map[target-num]=index;
+        
+    }
+};
